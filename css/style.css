@@ -34,6 +34,11 @@
     transform-origin: 10% 42%;
 }
 
+.benefits__img {
+    margin-bottom: 60px;
+    width: 100%;
+}
+
 .nav-toggle .bar-bot {
     margin-bottom: 0;
 }
