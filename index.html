@@ -16,7 +16,12 @@
     <div class="container">
         <header class="header">
             <div class="header_top">
-                <a href="#">
+                <button id="menuBtn" class="menu-btn nav-toggle">
+                    <span class="bar-top"></span>
+                    <span class="bar-mid"></span>
+                    <span class="bar-bot"></span>
+                </button>
+                <a class="header__logo-link" href="#">
                     <img src="./img/LogoHeader.png" class="header__logo" alt="Логотип Webasto">
                 </a>
                 <p class="header__top__txt">
@@ -33,7 +38,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="tel:+73462335020" class="header__item">
+                <a href="tel:+73462335020" class="header__item header__item__phone">
                     <span class="header__tel"></span>
                     <div class="item__container">
                         <p>
@@ -86,12 +91,75 @@
                     </li>
                 </ul>
             </div>
+            <div id="menuContainer" class="menu">
+                <ul>
+                    <li>
+                        <a href="#heater">
+                            Подогреватели
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#bodies">
+                            Органы управления
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#airheaters">
+                            Воздушные отопители
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#brand">
+                            О бренде
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="separation-menu"></div>
+                <a href="tel:+73462335020" class="header__item-menu">
+                    <span class="header__tel-menu"></span>
+                    <div class="item__container-menu">
+                        <p>
+                            Телефон:
+                        </p>
+                        <p class="item__container__decor-menu">
+                            +7(3462)33-50-20
+                        </p>
+                    </div>
+                </a>
+                <div class="header__item-menu">
+                    <span class="header__address-menu"></span>
+                    <div class="item__container-menu">
+                        <p>
+                            Офис 4 (второй этаж)
+                        </p>
+                        <p class="item__container__decor-menu">
+                            Нефтеюганское шоссе, 62/1
+                        </p>
+                    </div>
+                </div>
+                <a target="_blank" href="https://wa.me/79824135020" class="header__item-menu">
+                    <span class="header__message-menu"></span>
+                    <div class="item__container-menu">
+                        <p>
+                            WhatsApp/Viber:
+                        </p>
+                        <p class="item__container__decor-menu">
+                            +7(982)413-50-20
+                        </p>
+                    </div>
+                </a>
+            </div>
         </header>
         <div class="heater__container">
             <section class="heater" id="heater">
-                <h1>
+                <h2 class="h2">
                     Подогреватели
-                </h1>
+                </h2>
                 <div class="bodies__contaner">
                     <div class="bodies__items">
                         <img src="./img/WebastoImgStart.png" class="bodies__img">
@@ -99,28 +167,28 @@
                             Webasto Thermo Top Evo Start Бензин/Дизель
                         </h2>
                         <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
-                                    Мощность
-                                </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
-                                    5 кВт
-                                </p>
-                                <p>
-                                    12 В
-                                </p>
-                                <p>
-                                    Бензин/дизель
-                                </p>
-                            </div>
+                            <p class="bodies__description-left">
+                                Мощность
+                            </p>
+                            <p class="bodies__description-right">
+                                5 кВт
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Напряжение
+                            </p>
+                            <p class="bodies__description-right">
+                                12 В
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Топливо
+                            </p>
+                            <p class="bodies__description-right">
+                                Бензин/дизель
+                            </p>
                         </div>
                     </div>
                     <div class="bodies__items">
@@ -129,28 +197,28 @@
                             Webasto Thermo Top Evo Comfort+ Бензин/Дизель
                         </h2>
                         <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
-                                    Мощность
-                                </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
-                                    5 кВт
-                                </p>
-                                <p>
-                                    12 В
-                                </p>
-                                <p>
-                                    Бензин/дизель
-                                </p>
-                            </div>
+                            <p class="bodies__description-left">
+                                Мощность
+                            </p>
+                            <p class="bodies__description-right">
+                                5 кВт
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Напряжение
+                            </p>
+                            <p class="bodies__description-right">
+                                12 В
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Топливо
+                            </p>
+                            <p class="bodies__description-right">
+                                Бензин/дизель
+                            </p>
                         </div>
                     </div>
                     <div class="bodies__items">
@@ -158,26 +226,28 @@
                         <h2 class="bodies__item-head">
                             Webasto Thermo Pro 50
                         </h2>
-                        <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
+                        <div>
+                            <div class="bodies__item__description">
+                                <p class="bodies__description-left">
                                     Мощность
                                 </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
+                                <p class="bodies__description-right">
                                     5 кВт
                                 </p>
-                                <p>
+                            </div>
+                            <div class="bodies__item__description">
+                                <p class="bodies__description-left">
+                                    Напряжение
+                                </p>
+                                <p class="bodies__description-right">
                                     24 В
                                 </p>
-                                <p>
+                            </div>
+                            <div class="bodies__item__description">
+                                <p class="bodies__description-left">
+                                    Топливо
+                                </p>
+                                <p class="bodies__description-right">
                                     Дизель
                                 </p>
                             </div>
@@ -189,35 +259,38 @@
                             Webasto Thermo Pro 90
                         </h2>
                         <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
-                                    Мощность
-                                </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
-                                    9 кВт
-                                </p>
-                                <p>
-                                    12 В
-                                </p>
-                                <p>
-                                    Бензин/дизель
-                                </p>
-                            </div>
+                            <p class="bodies__description-left">
+                                Мощность
+                            </p>
+                            <p class="bodies__description-right">
+                                9 кВт
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Напряжение
+                            </p>
+                            <p class="bodies__description-right">
+                                12 В
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Топливо
+                            </p>
+                            <p class="bodies__description-right">
+                                Бензин/дизель
+                            </p>
                         </div>
                     </div>
                 </div>
                 <h2 class="h2">
                     Принцип работы подогревателей
                 </h2>
-                    <iframe class="iframe" width="100%" height="586" src="https://www.youtube.com/embed/R2iMK_4rA8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="iframe" width="100%" height="586" src="https://www.youtube.com/embed/R2iMK_4rA8Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </section>
         </div>
         <section class="bodies" id="bodies">
@@ -231,28 +304,28 @@
                         GSM модуль управления M36
                     </h2>
                     <div class="bodies__item__description">
-                        <div class="bodies__description-left">
-                            <p>
-                                Отсл. местоположения
-                            </p>
-                            <p>
-                                Напряжение
-                            </p>
-                            <p>
-                                Дистанционный пуск
-                            </p>
-                        </div>
-                        <div class="bodies__description-right">
-                            <p>
-                                Да
-                            </p>
-                            <p>
-                                12 В/24 В
-                            </p>
-                            <p>
-                                Да
-                            </p>
-                        </div>
+                        <p class="bodies__description-left">
+                            Отсл. местоположения
+                        </p>
+                        <p class="bodies__description-right">
+                            Да
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Напряжение
+                        </p>
+                        <p class="bodies__description-right">
+                            12 В/24 В
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Дистанционный пуск
+                        </p>
+                        <p class="bodies__description-right">
+                            Да
+                        </p>
                     </div>
                 </div>
                 <div class="bodies__items">
@@ -261,28 +334,28 @@
                         Система дистанционного управления Telestart 99
                     </h2>
                     <div class="bodies__item__description">
-                        <div class="bodies__description-left">
-                            <p>
-                                Дальность действия
-                            </p>
-                            <p>
-                                Индикация сигнала
-                            </p>
-                            <p>
-                                Дистанционный пуск
-                            </p>
-                        </div>
-                        <div class="bodies__description-right">
-                            <p>
-                                1 км
-                            </p>
-                            <p>
-                                Да
-                            </p>
-                            <p>
-                                Да
-                            </p>
-                        </div>
+                        <p class="bodies__description-left">
+                            Дальность действия
+                        </p>
+                        <p class="bodies__description-right">
+                            1 км
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Индикация сигнала
+                        </p>
+                        <p class="bodies__description-right">
+                            Да
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Дистанционный пуск
+                        </p>
+                        <p class="bodies__description-right">
+                            Да
+                        </p>
                     </div>
                 </div>
                 <div class="bodies__items">
@@ -291,28 +364,28 @@
                         Минитаймер Webasto 1533
                     </h2>
                     <div class="bodies__item__description">
-                        <div class="bodies__description-left">
-                            <p>
-                                Количество программ
-                            </p>
-                            <p>
-                                Датчик температуры
-                            </p>
-                            <p>
-                                Ручной пуск
-                            </p>
-                        </div>
-                        <div class="bodies__description-right">
-                            <p>
-                                3 шт.
-                            </p>
-                            <p>
-                                Да
-                            </p>
-                            <p>
-                                Да
-                            </p>
-                        </div>
+                        <p class="bodies__description-left">
+                            Количество программ
+                        </p>
+                        <p class="bodies__description-right">
+                            3 шт.
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Датчик температуры
+                        </p>
+                        <p class="bodies__description-right">
+                            Да
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Ручной пуск
+                        </p>
+                        <p class="bodies__description-right">
+                            Да
+                        </p>
                     </div>
                 </div>
                 <div class="bodies__items">
@@ -321,28 +394,28 @@
                         Таймер Webasto MultiControl Car
                     </h2>
                     <div class="bodies__item__description">
-                        <div class="bodies__description-left">
-                            <p>
-                                Количество программ
-                            </p>
-                            <p>
-                                Датчик температуры
-                            </p>
-                            <p>
-                                Напряжение
-                            </p>
-                        </div>
-                        <div class="bodies__description-right">
-                            <p>
-                                3 шт.
-                            </p>
-                            <p>
-                                Да
-                            </p>
-                            <p>
-                                12 В/24 В
-                            </p>
-                        </div>
+                        <p class="bodies__description-left">
+                            Количество программ
+                        </p>
+                        <p class="bodies__description-right">
+                            3 шт.
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Датчик температуры
+                        </p>
+                        <p class="bodies__description-right">
+                            Да
+                        </p>
+                    </div>
+                    <div class="bodies__item__description">
+                        <p class="bodies__description-left">
+                            Напряжение
+                        </p>
+                        <p class="bodies__description-right">
+                            12 В/24 В
+                        </p>
                     </div>
                 </div>
             </div>
@@ -354,123 +427,123 @@
                 </h2>
                 <div class="bodies__contaner">
                     <div class="bodies__items">
-                        <img src="./img/HeaterImgOne.png" class="bodies__img">
+                        <img src="./img/HeaterImgOne.png" class="air__img">
                         <h2 class="bodies__item-head">
                             Webasto AT 2000STC
                         </h2>
                         <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
-                                    Отопительная мощность
-                                </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
-                                    2 кВТ
-                                </p>
-                                <p>
-                                    24 В
-                                </p>
-                                <p>
-                                    Дизель
-                                </p>
-                            </div>
+                            <p class="bodies__description-left">
+                                Отопительная мощность
+                            </p>
+                            <p class="bodies__description-right">
+                                2 кВт
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Напряжение
+                            </p>
+                            <p class="bodies__description-right">
+                                24 В
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Топливо
+                            </p>
+                            <p class="bodies__description-right">
+                                Дизель
+                            </p>
                         </div>
                     </div>
                     <div class="bodies__items">
-                        <img src="./img/HeaterImgTwo.png" class="bodies__img">
+                        <img src="./img/HeaterImgTwo.png" class="air__img">
                         <h2 class="bodies__item-head">
                             Webasto AT 2000STC
                         </h2>
                         <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
-                                    Отопительная мощность
-                                </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
-                                    2 кВт
-                                </p>
-                                <p>
-                                    12 В
-                                </p>
-                                <p>
-                                    Бензин
-                                </p>
-                            </div>
+                            <p class="bodies__description-left">
+                                Отопительная мощность
+                            </p>
+                            <p class="bodies__description-right">
+                                2 кВт
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Напряжение
+                            </p>
+                            <p class="bodies__description-right">
+                                12 В
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Топливо
+                            </p>
+                            <p class="bodies__description-right">
+                                Бензин
+                            </p>
                         </div>
                     </div>
                     <div class="bodies__items">
-                        <img src="./img/HeaterImgThree.png" class="bodies__img">
+                        <img src="./img/HeaterImgThree.png" class="air__img">
                         <h2 class="bodies__item-head">
                             Webasto AT Evo 55
                         </h2>
                         <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
-                                    Отопительная мощность
-                                </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
-                                    5 кВт
-                                </p>
-                                <p>
-                                    12 В
-                                </p>
-                                <p>
-                                    Дизель
-                                </p>
-                            </div>
+                            <p class="bodies__description-left">
+                                Отопительная мощность
+                            </p>
+                            <p class="bodies__description-right">
+                                5 кВт
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Напряжение
+                            </p>
+                            <p class="bodies__description-right">
+                                12 В
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Топливо
+                            </p>
+                            <p class="bodies__description-right">
+                                Дизель
+                            </p>
                         </div>
                     </div>
                     <div class="bodies__items">
-                        <img src="./img/HeaterImgFour.png" class="bodies__img">
+                        <img src="./img/HeaterImgFour.png" class="air__img">
                         <h2 class="bodies__item-head">
                             Webasto AT Evo 55
                         </h2>
                         <div class="bodies__item__description">
-                            <div class="bodies__description-left">
-                                <p>
-                                    Отопительная мощность
-                                </p>
-                                <p>
-                                    Напряжение
-                                </p>
-                                <p>
-                                    Топливо
-                                </p>
-                            </div>
-                            <div class="bodies__description-right">
-                                <p>
-                                    5 кВт
-                                </p>
-                                <p>
-                                    12 В
-                                </p>
-                                <p>
-                                    Бензин
-                                </p>
-                            </div>
+                            <p class="bodies__description-left">
+                                Отопительная мощность
+                            </p>
+                            <p class="bodies__description-right">
+                                5 кВт
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Напряжение
+                            </p>
+                            <p class="bodies__description-right">
+                                12 В
+                            </p>
+                        </div>
+                        <div class="bodies__item__description">
+                            <p class="bodies__description-left">
+                                Топливо
+                            </p>
+                            <p class="bodies__description-right">
+                                Бензин
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -485,9 +558,9 @@
         </section>
         <section class="tradition" id="brand">
             <div class="tradition__left">
-                <h2 class="h2">
+                <h1 class="h2">
                     Webasto — традиция прогресса
-                </h2>
+                </h1>
                 <div>
                     <p>
                         Webasto — глобальный партнер по инновационным системам почти для всех автопроизводителей, но с
@@ -545,7 +618,7 @@
                             </p>
                         </div>
                     </a>
-                    <a href="https://wa.me/79824135020" class="contacts__item">
+                    <a target="_blank" href="https://wa.me/79824135020" class="contacts__item">
                         <span class="contacts__message"></span>
                         <div class="item__container">
                             <p>
@@ -569,7 +642,7 @@
                     </a>
                 </div>
             </div>
-            <div style="width: 100%; height: 680px;" class="map-yandex" id="map"></div>
+            <iframe class="map-yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7021aebcdab6fa4f627f4d0b818bcd771f8ab9ae40e4c76446128ef5308addd6&amp;source=constructor" width="100%" height="680" frameborder="0"></iframe>
         </div>
     </section>
     <footer class="footer">

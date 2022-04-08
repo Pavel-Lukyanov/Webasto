@@ -1,8 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+/* Кнопка бургера */
+
+.nav-toggle {
+    position: relative;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 7px 0;
+    top: 25%;
+    left: 15%;
+    -webkit-transform(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.nav-toggle:focus {
+    outline-width: 0;
+}
+
+.nav-toggle [class*='bar-'] {
+    background: #FFFFFF;
+    display: block;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+    height: 4px;
+    width: 45px;
+    margin-bottom: 8.85px;
+    -webkit-transform-origin: 10% 42%;
+    transform-origin: 10% 42%;
+}
+
+.nav-toggle .bar-bot {
+    margin-bottom: 0;
+}
+
+.opened .bar-top {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.opened .bar-mid {
+    opacity: 0;
+}
+
+.opened .bar-bot {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 html {
-    scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
-  }
+    scroll-behavior: smooth;
+    /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
 
 .container {
     width: 100%;
@@ -10,12 +63,11 @@ html {
 }
 
 .header {
-    background-size: 100%;
+    background-size: 100% 100%;
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/Header.png);
     margin: auto;
-    height: 171px;
 }
 
 .header_top {
@@ -25,6 +77,57 @@ html {
     justify-content: space-between;
     padding-top: 28px;
     margin-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    column-gap: 10px;
+}
+
+.item__container-menu {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.header__item-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__item-menu p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #051B2C;
+    margin: 0;
+}
+
+.header__address-menu {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/addressIconBlack.svg);
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-right: 10px;
+}
+
+.header__tel-menu {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/phoneIconBlack.svg);
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-right: 10px;
+}
+
+.header__message-menu {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/messageIconBlack.svg);
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-right: 10px;
 }
 
 .header_top p {
@@ -45,6 +148,10 @@ html {
     margin-right: 10px;
 }
 
+.menu-btn {
+    display: none;
+}
+
 .header__tel {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -53,6 +160,49 @@ html {
     height: 24px;
     display: block;
     margin-right: 10px;
+}
+
+.menu {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 30px;
+    z-index: 10;
+    transform: translateX(-101%);
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.menu-show {
+    transform: translate(0%);
+    transition: 0.5s;
+}
+
+.separation-menu {
+    width: 100%;
+    border-bottom: 1px solid #051B2C;
+    opacity: 0.3;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    color: #051B2C;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .header__message {
@@ -94,6 +244,9 @@ html {
 .header_bottom {
     max-width: 1160px;
     margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 27px;
 }
 
 .header_bottom ul {
@@ -110,7 +263,7 @@ html {
 .header_bottom a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -120,6 +273,8 @@ html {
     max-width: 1160px;
     margin: auto;
     padding-top: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .heater__container {
@@ -144,16 +299,18 @@ html {
 }
 
 .bodies__item-head {
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     color: #333333;
     margin: 0;
-    margin-bottom: 15px;
+    top: 220px;
+    padding-right: 20px;
 }
 
-.bodies__description-left p {
+.bodies__description-left {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -161,9 +318,10 @@ html {
     line-height: 17px;
     color: #333333;
     margin: 0;
+    padding-right: 10px;
 }
 
-.bodies__description-right p {
+.bodies__description-right {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -185,6 +343,12 @@ html {
 .bodies__item__description {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.bodies__item__description p {
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .bodies__items {
@@ -192,12 +356,13 @@ html {
     border: 1px solid #DEDFE4;
     padding: 20px;
     padding-top: 30px;
+    position: relative;
 }
 
 .bodies__img {
     display: block;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     max-width: 200px;
     height: 160px;
 }
@@ -221,10 +386,14 @@ html {
     margin: auto;
     padding-top: 60px;
     margin-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .airheaters {
     background-color: #E5E5E5;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .airheaters__contaner {
@@ -240,6 +409,14 @@ html {
     margin-bottom: 60px;
 }
 
+.air__img {
+    display: block;
+    margin: auto;
+    height: 114px;
+    max-width: 200px;
+    margin-bottom: 110px;
+}
+
 .tradition {
     max-width: 1160px;
     margin: auto;
@@ -247,6 +424,8 @@ html {
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .tradition__left div p {
@@ -273,19 +452,21 @@ html {
 .benefits {
     max-width: 1160px;
     margin: auto;
-    margin-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .contacts {
     background-color: #E5E5E5;
     padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .contacts__container {
     max-width: 1160px;
     margin: auto;
     padding-top: 60px;
-    margin-bottom: 60px;
     box-sizing: content-box;
 }
 
@@ -293,6 +474,7 @@ html {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    row-gap: 20px;
 }
 
 .contacts__address {
@@ -336,6 +518,7 @@ html {
 }
 
 .contacts__item {
+    width: fit-content;
     display: flex;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -350,18 +533,15 @@ html {
     font-weight: 400 !important;
 }
 
-.map-yandex {
-    margin-bottom: 60px;
-}
-
 .footer {
     background-color: #051B2C;
-    height: 140px;
 }
 
 .footer__container {
     max-width: 1160px;
     margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .footer_menu ul {
@@ -384,6 +564,10 @@ html {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+.footer__logo-img {
+    margin-bottom: 22px;
 }
 
 .footer__separation {
@@ -417,4 +601,270 @@ html {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+@media(max-width: 1179px) {
+    .bodies__contaner {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+
+    .map-yandex {
+        height: 580px !important;
+    }
+}
+
+@media(max-width: 1071px) {
+    .header__item {
+        display: none;
+    }
+
+    .header__item__phone {
+        display: flex;
+    }
+
+    .header_top {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header__top__txt {
+        margin: auto;
+        text-align: center;
+    }
+
+    .header__logo-link {
+        display: block;
+    }
+
+    .header__item__phone {
+        justify-content: end;
+    }
+}
+
+@media(max-width: 964px) {
+
+    .contacts__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacts__item {
+        margin-right: 20px;
+    }
+
+    .tradition {
+        display: block;
+    }
+
+    .tradition__left {
+        max-width: none;
+        margin-bottom: 40px;
+    }
+
+    .tradition__right {
+        margin: auto;
+    }
+}
+
+@media(max-width: 843px) {
+
+    .footer__bottom {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .footer__bottom__left {
+        justify-content: center;
+    }
+
+    .footer__bottom__right {
+        text-align: center;
+    }
+
+    .footer_menu ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .footer__container {
+        padding-bottom: 25px;
+    }
+
+    .map-yandex {
+        height: 480px !important;
+    }
+
+    .bodies__contaner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iframe {
+        height: 400px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .header__logo-link {
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border: none;
+    }
+
+    .header__top__txt {
+        display: none;
+    }
+
+    .header_bottom {
+        display: none;
+    }
+
+    .header__separation {
+        display: none;
+    }
+
+    .header_top {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    .header__top__txt {
+        display: none;
+    }
+}
+
+@media(max-width: 642px) {
+    .heater {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bodies {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .benefits {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tradition {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .airheaters {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 616px) {
+    .contacts__info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header__item__phone {
+        display: none;
+    }
+}
+
+@media(max-width: 575px) {
+    .footer__bottom__left {
+        display: block;
+    }
+
+    .footer__logo-link {
+        text-align: center;
+        display: block;
+    }
+
+    .footer__logo-img {
+        margin-bottom: 0;
+    }
+
+    .footer__txt {
+        text-align: center;
+    }
+}
+
+@media(max-width: 552px) {
+    .bodies__img {
+        margin-bottom: 120px;
+    }
+
+    .iframe {
+        height: 300px;
+    }
+}
+
+@media(max-width: 544px) {
+    .bodies__contaner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bodies__img {
+        margin-bottom: 90px;
+    }
+}
+
+@media(max-width: 475px) {
+    .footer_menu ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer__txt {
+        font-size: 13px;
+    }
+
+    .footer__bottom__right p {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .header__item-menu p {
+        font-size: 14px;
+    }
+
+    .map-yandex {
+        height: 300px !important;
+    }
+
+    .item__container {
+        font-size: 14px;
+    }
+
+    .tradition__right {
+        background-size: 250px 190px;
+        width: 250px;
+    }
+
+    .tradition {
+        margin-bottom: 0;
+    }
+
+    .iframe {
+        height: 280px;
+    }
+
+    .h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
 }
