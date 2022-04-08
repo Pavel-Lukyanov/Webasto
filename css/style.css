@@ -71,6 +71,7 @@ html {
 }
 
 .header_top {
+    align-items: center;
     max-width: 1160px;
     margin: auto;
     display: flex;
