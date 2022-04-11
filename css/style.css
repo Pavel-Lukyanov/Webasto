@@ -12,7 +12,7 @@
     margin: 7px 0;
     top: 30%;
     left: 15%;
-    -webkit-transform(-50%, -50%);
+    -webkit-transform: (-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -550,6 +550,7 @@ html {
     margin: auto;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 22px;
 }
 
 .footer_menu ul {
@@ -574,10 +575,6 @@ html {
     color: #FFFFFF;
 }
 
-.footer__logo-img {
-    margin-bottom: 22px;
-}
-
 .footer__separation {
     width: 100%;
     border-bottom: 1px solid #FFFFFF;
@@ -593,6 +590,7 @@ html {
 .footer__bottom__left {
     display: flex;
     column-gap: 25px;
+    align-items: center;
 }
 
 .footer__txt {
